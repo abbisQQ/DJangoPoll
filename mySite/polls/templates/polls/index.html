@@ -1,0 +1,18 @@
+{% extends 'polls/base.html' %}
+
+{% block main_content %}
+
+<h1> Please Choose a Question.</h1>
+
+{% if latest_questions %}
+    <ul>
+        {% for question in latest_questions %}
+            <li><a href = '/polls/{{question.id}}'><b>{{question.question_text}}</b></a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> You need to add some questions</p>
+{% endif %}
+
+
+{% endblock %}

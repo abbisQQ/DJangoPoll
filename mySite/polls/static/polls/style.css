@@ -1,0 +1,11 @@
+li a{
+    font-size: 20px;
+    color: red;
+}
+
+
+
+body{
+    color: black;
+    background: white url("images/background.png") no-repeat;
+}
